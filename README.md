@@ -12,12 +12,13 @@ This repository contains various installation and setup scripts for **openSUSE T
 > Installs and configures **Rusticl** for **Radeon GPUs**.
 ---
 - **suse_modern_gnome.sh**
-> This script creates a modern **GNOME** experience by removing obsolete packages and replacing legacy apps with their newer equivalants. It is intended to be used on a fresh installation with online repositories enabled. You must install a web browser via **Flatpak** after the first boot. For example:
+> This script creates a modern **GNOME** experience by replacing legacy apps with their newer counterparts. It works best on a fresh installation with online repositories enabled. You may optionally install a web browser via **Flatpak** after the first boot, for example:
 > ```
 > flatpak install flathub-beta org.mozilla.firefox
 > ```
 > Also includes [zypper-unjammed](https://github.com/makesourcenotcode/zypper-unjammed), and sets up an alias for zypper-autoremove.
-> - <img src="images/screenshot_appmenu.png" alt="" width="65%" align="center">
-> - <img src="images/screenshot_appmenu_folders.png" alt="" width="65%" align="center">
+>    
+> <img src="images/screenshot_appmenu.png" alt="" width="50%" align="center">
+> <img src="images/screenshot_appmenu_folders.png" alt="" width="50%" align="center">
    
 ---
