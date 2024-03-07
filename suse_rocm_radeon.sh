@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Script by Farid Zellipour
+# https://github.com/FaridZelli
+
 # Check the current user
 USER=$(whoami)
 if [ "$USER" == "root" ]; then
@@ -7,18 +10,27 @@ if [ "$USER" == "root" ]; then
   echo -e "\033[32mYou are logged in as root.\033[0m"
 else
   # Non-root user detected
-  echo -e "\033[31mATTENTION:\033[0m \033[33mYou do not seem to be logged in as root!\033[0m"
+  echo -e "
+--------------------------------------------------
+\033[33mWARNING: You do not seem to be logged in as root!\033[0m
+--------------------------------------------------"
 fi
-# Ask to procede with the rest of the script
-read -p "This script will install and configure ROCm on your system. Do you want to continue? (Y/N) " ANSWER
+
+# Ask whether to proceed
+echo -e "
+This script will install and configure ROCm on your system.
+\033[33mDo you wish to continue? (Y/N)\033[0m
+"
+# User input
+read -p "Your choice:" ANSWER
+# Read input
 case $ANSWER in
   [Yy]* ) 
-    # Procede with the rest of the script
-    echo "Starting..."
+    # Proceed with the rest of the script
     ;;
   * )
     # Stop the script for any other input
-    echo "Stopping..."
+    echo "Stopping the script..."
     exit 1
     ;;
 esac
@@ -36,6 +48,7 @@ zypper refresh
 zypper --gpg-auto-import-keys install rocm-opencl rocm-opencl-devel rocminfo rocm-smi-lib rocm-ocl-icd clinfo
 
 # End of script
-echo -e "--------------------
+echo -e "
+--------------------------------------------------
 \033[32mIt's time to reboot!\033[0m
---------------------"
+--------------------------------------------------"
