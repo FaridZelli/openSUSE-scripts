@@ -3,13 +3,7 @@ This repository contains various installation and setup scripts for **openSUSE T
 
 **Note:** All scripts must be run as **root**.
 
-## Information:
----
-- **suse_rocm_radeon.sh**
-> Performs a lightweight **ROCm** installation for **Radeon GPUs**.
----
-- **suse_rusticl_radeon.sh**
-> Installs and configures **Rusticl** for **Radeon GPUs**.
+## List:
 ---
 - **suse_modern_gnome.sh**
 > This script creates a modern **GNOME** experience by replacing legacy apps with their newer counterparts. It works best on a fresh installation with online repositories enabled. You may optionally install a web browser via **Flatpak** after the first boot, for example:
@@ -21,4 +15,10 @@ This repository contains various installation and setup scripts for **openSUSE T
 > <img src="images/screenshot_appmenu.png" alt="" width="50%" align="center">
 > <img src="images/screenshot_appmenu_folders.png" alt="" width="50%" align="center">
    
+---
+- **suse_rocm_radeon.sh**
+> Performs a lightweight **ROCm** installation for **Radeon GPUs**.
+---
+- **suse_rusticl_radeon.sh**
+> Installs and configures **Rusticl** for **Radeon GPUs**.
 ---
