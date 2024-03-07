@@ -17,5 +17,7 @@ This repository contains various installation and setup scripts for **openSUSE T
 > flatpak install flathub-beta org.mozilla.firefox
 > ```
 > Also includes [zypper-unjammed](https://github.com/makesourcenotcode/zypper-unjammed), and sets up an alias for zypper-autoremove.
-<img src="images/screenshot_appmenu.png" alt="" width="65%" align="center">
-<img src="images/screenshot_appmenu_folders.png" alt="" width="65%" align="center">
+> - <img src="images/screenshot_appmenu.png" alt="" width="65%" align="center">
+> - <img src="images/screenshot_appmenu_folders.png" alt="" width="65%" align="center">
+   
+---
