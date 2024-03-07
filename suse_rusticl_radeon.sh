@@ -18,9 +18,7 @@ fi
 
 # Ask whether to proceed
 echo -e "
-This script will reconfigure your \033[32mopenSUSE\033[0m \033[36mGNOME\033[0m environment.
-I am not responsible for any damage or data loss that may occur.
-
+This script will install and configure Rusticl for Radeon on your system.
 \033[33mDo you wish to continue? (Y/N)\033[0m
 "
 # User input
