@@ -2,16 +2,16 @@
 
 # Script by Farid Zellipour
 # https://github.com/FaridZelli
-# Last updated 2024-3-12 10:47 PM
+# Last updated 2024-3-12 10:50 PM
 
 # Check the current user
 USER=$(whoami)
 if [ "$USER" == "root" ]; then
   # Welcome text
   echo -e "
-  --------------------------------------------------
-  \033[32mYou are logged in as root.\033[0m
-  --------------------------------------------------"
+--------------------------------------------------
+\033[32mYou are logged in as root.\033[0m
+--------------------------------------------------"
 else
   # Non-root user detected
   echo -e "
