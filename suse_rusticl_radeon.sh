@@ -7,7 +7,10 @@
 USER=$(whoami)
 if [ "$USER" == "root" ]; then
   # Welcome text
-  echo -e "\033[32mYou are logged in as root.\033[0m"
+  echo -e "
+--------------------------------------------------
+\033[32mYou are logged in as root.\033[0m
+--------------------------------------------------"
 else
   # Non-root user detected
   echo -e "
@@ -19,6 +22,8 @@ fi
 # Ask whether to proceed
 echo -e "
 This script will install and configure Rusticl for Radeon on your system.
+I am not responsible for any damage or data loss that may occur.
+
 \033[33mDo you wish to continue? (Y/N)\033[0m
 "
 # User input
